@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RepairWisePlugin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Reference to your javascript file with the getToken and saveReportInfo methods -->
+        <script src="utils.js"></script>
+        <!-- Link to our server where the plugin is hosted -->
+        <script src="http://dev-rw-plugin.s3-website-us-west-2.amazonaws.com/repairwise-embed.bundle.js"></script>
+    </head>
+
+    <body>
+        <rw-main>Loading...</rw-main>
+    </body>
+
+    <script>
+        // How to start the plugin and load it
+        window.startRepairWise(getToken, saveReportInfo);
+    </script>
+    
+    <!-- The styling sheet that plugin will use MUST be named repairwise-style.css -->
+    <link rel="stylesheet" type="text/css" href="repairwise-style.css" />
+    <!-- You styling sheet for the page embedding the plugin -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+</html>

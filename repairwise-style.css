@@ -1,0 +1,146 @@
+.rw-header {
+	/*
+		Thin header trim 
+	*/
+	background-color: #032D4C;
+}
+
+.rw-middle {
+	/*
+		Thick header banner 
+	*/	
+	background-color: #06476F;
+}
+
+.rw-card-background,
+.rw-input-background,
+.rw-search-results-background {
+	/*
+		Card 
+	*/
+	background: #FAFAFA;
+}
+
+.rw-button-continue,
+.rw-search-results-highlight,
+.rw-search-results:hover {
+	/*
+		Confirm button
+		Search results mouse over
+	*/
+	background-color: #1565C0;
+	/*
+		Confirm button text
+		Search results mouse over text
+	*/
+	color: #FFFFFF;
+}
+
+.rw-adaptive-placeholder > input.rw-input-background[type="text"][required]:focus + span[title]::before, 
+.rw-adaptive-placeholder > input.rw-input-background[type="text"][required]:valid + span[title]::before {
+	/*
+		Textbox placeholder active
+	*/
+	color: #1565C0;
+}
+
+.rw-adaptive-placeholder > input.rw-input-background:focus[type=text] {
+	/*
+		Textbox bottom border highlight
+	*/
+	border-bottom-color: #1565C0;
+}
+
+.rw-adaptive-placeholder > input.rw-input-background[type="text"][required] + span[title]::before {
+    /*
+        Textbox placeholder inactive
+    */
+    color: #979797;
+}
+
+.rw-question-title,
+.rw-address-summary,
+.rw-description-summary,
+.rw-low-high-labels {
+	/*
+		Question cards' title text; low / high, address and description text on summary card
+	*/
+	color: #3D3D3D;
+}
+
+.rw-summary-details {
+	/*
+		Summary card detail text
+	*/
+	color: #979797;
+}
+
+.rw-summary-price {
+	/*
+		Summary card price text
+	*/
+	color: #5D882E;
+}
+
+.rw-summary-title {
+	/*
+		Summary card title text
+	*/
+	color: #000000;
+}
+
+.rw-icon-color {
+	/*
+		Plus color
+	*/
+	color: #FFFFFF;
+}
+
+.mat-slider-thumb,
+.mat-slider-track-fill,
+.rw-add-button-background {
+	/*
+		Slider thumb and fill
+		Add button
+	*/
+	background-color: #FF5722;
+}
+
+.mat-slider-track-wrapper {
+	/*
+		Slider track
+	*/
+	background-color: #979797;
+}
+
+.mat-progress-bar-buffer {
+	/*
+		Loading Bar background
+	*/
+	background-color: #FAFAFA;
+}
+
+.mat-progress-bar-fill::after {
+	/*
+		Loading Bar fill
+	*/
+	background-color: #1565C0;
+}
+.mat-spinner {
+	stroke: #5D882E;
+}
+
+@keyframes on-add-color-change {
+	/*
+		Make this the same as your Add Button
+	*/
+	from {
+		background: #FF5722;
+	}
+	/*
+		Make this the same as your Card Background
+	*/
+	to {
+		background: #FAFAFA;
+	}
+}

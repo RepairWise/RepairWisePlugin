@@ -1,0 +1,12 @@
+{
+    "name": "@repairwise/plugin-example",
+    "version": "1.0.0",
+    "author": {
+        "name": "RepairWise"
+    },
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RepairWise/RepairWisePlugin.git"
+    }
+}

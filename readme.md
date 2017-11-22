@@ -123,7 +123,7 @@ You will need to create your own function that performs a post request to https:
 ```
 "client_id", "repairwise"
 
-"client_secret", <-- Your secret -->
+"client_secret", <-- Your secret key -->
 
 "grant_type", "client_credentials"
 

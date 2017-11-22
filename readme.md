@@ -118,8 +118,6 @@ It is critical to mention that none of the `.css' classes can be renamed.
 
 RepairWise will authenticate all network requests using a client credential grant workflow. 
 
-- https://auth0.com/docs/api-auth/grant/client-credentials.
-
 You will need to create your own function that performs a post request to https://identity.verisk.com with the following parameters:
 
 ```

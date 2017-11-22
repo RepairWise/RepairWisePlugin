@@ -55,7 +55,7 @@ First we'll add the `getToken` method.
     // callback to your OAuth resource
   }
 ```
-For more information on OAuth and getting a token read * [OAuth](#oauth).
+For more information on OAuth and getting a token read [OAuth](#oauth).
 
 Lastly we'll add the `saveReportInfo` in our `utils.js`.
 

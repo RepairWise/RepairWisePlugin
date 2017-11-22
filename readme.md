@@ -130,4 +130,4 @@ You will need to create your own function that performs a post request to https:
 "scope", "rw_api"
 ```
 
-This will return a token that will be appended to all requests in the plugin.
+Your post request must return a `Promise` that resolves to a string. This will be your token that will be appended to all requests in the plugin.

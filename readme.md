@@ -88,9 +88,9 @@ Ensure that both yours and our style sheets are include in the `index.html`.
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
 ```
 
-They colors of the plugin can be customized to fit the style of your website. We have provided a style sheet `repairwise-style.css`.
+The colors of the plugin can be customized to fit the style of your website. We have provided a style sheet `repairwise-style.css`.
 
-For example to change the color of the header, open the `repair-wise.css` file and go to.
+For example to change the color of the header, open the `repairwise-style.css` file and go to.
 
 ```css
 .rw-header {

@@ -5,6 +5,13 @@
 	background-color: #032D4C;
 }
 
+.rw-action-background-color:hover {
+ 	/*
+		Action button button hover
+ 	*/
+  background: #002443;
+}
+
 .rw-middle {
 	/*
 		Thick header banner 
@@ -37,9 +44,11 @@
 }
 
 .rw-adaptive-placeholder > input.rw-input-background[type="text"][required]:focus + span[title]::before, 
-.rw-adaptive-placeholder > input.rw-input-background[type="text"][required]:valid + span[title]::before {
+.rw-adaptive-placeholder > input.rw-input-background[type="text"][required]:valid + span[title]::before,
+.rw-add-job-text {
 	/*
 		Textbox placeholder active
+		Add another job text
 	*/
 	color: #1565C0;
 }
@@ -89,16 +98,15 @@
 	color: #000000;
 }
 
-.rw-icon-color {
+.rw-button-text-color {
 	/*
-		Plus color
+		Header buttons
 	*/
 	color: #FFFFFF;
 }
 
 .mat-slider-thumb,
-.mat-slider-track-fill,
-.rw-add-button-background {
+.mat-slider-track-fill {
 	/*
 		Slider thumb and fill
 		Add button
@@ -126,21 +134,10 @@
 	*/
 	background-color: #1565C0;
 }
-.mat-spinner {
-	stroke: #5D882E;
-}
 
-@keyframes on-add-color-change {
+.mat-progress-spinner {
 	/*
-		Make this the same as your Add Button
+		Price spinner
 	*/
-	from {
-		background: #FF5722;
-	}
-	/*
-		Make this the same as your Card Background
-	*/
-	to {
-		background: #FAFAFA;
-	}
+	stroke: #5D882E;
 }

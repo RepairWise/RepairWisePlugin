@@ -42,7 +42,7 @@ Now to actually start and load the plugin do the following:
 
 ```html
     <script>
-        window.startRepairWise(getToken, saveReportInfo);
+        window.startRepairWise(getToken, saveReportInfo, address, redirectUrl);
     </script>
 ```
 
@@ -73,7 +73,23 @@ Lastly we'll add the `saveReportInfo` in our `utils.js`.
   } 
 ```
 
-We are just printing this information to the console, ultimately what you do with the `address` and `report` is up to you.
+We are just printing this information to the console, ultimately what you do with the `addressJson` and `linkToReport` is up to you.
+
+`address` and `redirectUrl` are optional parameters.
+
+`address` is a json object that must be formatted in the following way:
+```javascript
+{
+  propertyNumber: string
+  street: string
+  city: string
+  stateProvince: string
+  postalCode: string
+  country: string
+}
+```
+
+`redirectUrl` is a url string that will enable the close button feature. This will be a button in RepairWise that the user can click to go to the provided url. For example, clicking the close button when `redirectUrl` is `https://www.google.com/` will take the user to `https://www.google.com/`.
 
 Now the plugin will successfully load in your page!  You will may notice however that there is no styling.
 

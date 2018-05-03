@@ -77,7 +77,13 @@ We are just printing this information to the console, ultimately what you do wit
 
 `address` and `redirectUrl` are optional parameters.
 
-`address` is a json object that must be formatted in the following way:
+`address` is a json object that has the following requirements
+* All fields are required
+* `stateProvince` can be the two letter abbreviation (UT) or the full name (Utah)
+* `postalCode` must be in the correct format
+* `country` can be the two letter abbreviation (US), the three letter country code (USA) or the full name (United States)
+
+`address` Example
 ```javascript
 {
   propertyNumber: string
@@ -128,13 +134,13 @@ Change the color to `#F2F2F2`, for example
 }
 ```
 
-It is critical to mention that none of the `.css' classes can be renamed.
+It is critical to mention that none of the `.css` classes can be renamed.
 
 # OAuth
 
 RepairWise will authenticate all network requests using a client credential grant workflow. 
 
-You will need to create your own function that performs a post request to https://identity.verisk.com with the following parameters:
+You will need to create your own function that performs a post request to https://identity.verisk.com/connect/token with the following parameters:
 
 ```
 "client_id", "repairwise"

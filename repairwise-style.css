@@ -69,19 +69,19 @@
 
 .rw-question-title,
 .rw-address-summary,
-.rw-description-summary,
-.rw-low-high-labels {
+.rw-quality-slider-label {
 	/*
-		Question cards' title text; low / high, address and description text on summary card
+		Question cards' title text; quality, low, high, and address text on summary card
 	*/
-	color: #3D3D3D;
+	color: #000000;
 }
 
+.rw-description-summary,
 .rw-summary-details {
 	/*
-		Summary card detail text
+		Summary card description and detail text
 	*/
-	color: #979797;
+	color: #3D3D3D;
 }
 
 .rw-summary-price {

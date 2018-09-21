@@ -39,3 +39,8 @@ address = {
 }
 
 redirectUrl = "https://www.google.com/"
+
+function onCloseRepairWise() 
+{ 
+   console.log("Closing RepairWise, please save any information"); 
+}

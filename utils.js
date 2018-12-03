@@ -10,7 +10,7 @@ function getToken() {
 function saveProjectInfo(reportInfo) {
   console.log("Called saveProjectInfo in Parent: ")
   console.log(reportInfo.address)
-  console.log(`ProjectId: ${reportInfo.projectId}`)
+  console.log("ProjectId: " + reportInfo.projectId)
 }
 
 address = null

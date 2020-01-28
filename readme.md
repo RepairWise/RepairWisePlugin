@@ -94,7 +94,7 @@ function saveProjectInfo(reportInfo) {
 }
 ```
 
-Upgrading Note: The callback `saveProjectInfo` is intended to replace the callback `saveReportInfo`. We recommend saving the project id's instead of the old report URLs. With the project id saved, you can do many operations like downloading reports by passing the project id as a url parameter to various endpoints of our api (eg `http://repairwise.com/api/reports/download?version=1.0&id={projectId}`). Saving the old report download URLs could eventually lead to outdated URLs.
+Upgrading Note: The callback `saveProjectInfo` is intended to replace the callback `saveReportInfo`. We recommend saving the project id's instead of the old report URLs. With the project id saved, you can do many operations like downloading reports by passing the project id as a url parameter to various endpoints of our api (eg `https://estimateon.com/api/reports/download?version=1.0&id={projectId}`). Saving the old report download URLs could eventually lead to outdated URLs.
 
 The `startingAddress` parameter lets you start RepairWise and skip the address entry screen. Pass in an object that contains the following required fields:
 

@@ -54,6 +54,8 @@ Initializing the plugin takes 2 steps. First, call `window.RepairWise({})` with 
 </script>
 ```
 
+Finally, in order for the plugin address search to work, you will need to provide the domains you will be using so that they can be whitelisted.
+
 ### Parameters
 
 The `getToken` callback method is required for the plugin to work.

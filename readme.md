@@ -1,6 +1,6 @@
-# RepairWise Plugin
+# EstimateON Plugin
 
-A simple web application that has the RepairWise Angular Plugin embedded.
+A simple web application that has the EstimateON Plugin embedded.
 
 ## Contents
 

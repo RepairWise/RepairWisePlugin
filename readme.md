@@ -19,7 +19,7 @@ In your `index.html` add a reference to our plugin.
 
   <!-- Any other tags you want -->
 
-  <script src="https://plugin.repairwise.com/repairwise-embed.bundle.js"></script>
+  <script src="https://plugin.estimateon.com/repairwise-embed.bundle.js"></script>
 </head>
 ```
 

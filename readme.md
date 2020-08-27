@@ -70,7 +70,7 @@ For more information on OAuth and getting a token read [OAuth](#oauth).
 
 The `onCloseUrl` redirect is optional. Adding it will add a `Close` button in the top right that redirects the user to the provided url
 
-The `onCloseRepairWise` callback function will be called as repairwise is closing. It takes no parameters and returns nothing.
+The `onCloseRepairWise` callback function will be called as EstimateON is closing. It takes no parameters and returns nothing.
 
 ```javascript
 function onCloseRepairWise()
@@ -79,9 +79,9 @@ function onCloseRepairWise()
 }
 ```
 
-The `saveProjectInfo` callback is called when a new project is created in RepairWise.
+The `saveProjectInfo` callback is called when a new project is created in EstimateON.
 
-Note: This will happen right after the user puts in an address. If you started RepairWise with an address, the project is created as RepairWise starts up. If the address has invalid information, like a bad postal code, the user will be taken to the address entry screen and this callback will be called after the correct address is entered. If you start RepairWise with a projectId, this callback will not be called unless the GET for the project with that id fails for some reason. If the project with the id could not be loaded, the user will be taken to the address entry screen and this callback will be called after the address is entered and a new project is created. In other words, even in the case of starting with a potentially good project id, you should be prepared to re-store a new project id just in the case the one provided is bad.
+Note: This will happen right after the user puts in an address. If you started EstimateON with an address, the project is created as EstimateON starts up. If the address has invalid information, like a bad postal code, the user will be taken to the address entry screen and this callback will be called after the correct address is entered. If you start EstimateON with a projectId, this callback will not be called unless the GET for the project with that id fails for some reason. If the project with the id could not be loaded, the user will be taken to the address entry screen and this callback will be called after the address is entered and a new project is created. In other words, even in the case of starting with a potentially good project id, you should be prepared to re-store a new project id just in the case the one provided is bad.
 
 ```javascript
 function saveProjectInfo(reportInfo) {
@@ -98,7 +98,7 @@ function saveProjectInfo(reportInfo) {
 
 Upgrading Note: The callback `saveProjectInfo` is intended to replace the callback `saveReportInfo`. We recommend saving the project id's instead of the old report URLs. With the project id saved, you can do many operations like downloading reports by passing the project id as a url parameter to various endpoints of our api (eg `https://estimateon.com/api/reports/download?version=1.0&id={projectId}`). Saving the old report download URLs could eventually lead to outdated URLs.
 
-The `startingAddress` parameter lets you start RepairWise and skip the address entry screen. Pass in an object that contains the following required fields:
+The `startingAddress` parameter lets you start EstimateON and skip the address entry screen. Pass in an object that contains the following required fields:
 
 * `stateProvince` can be the two letter abbreviation (UT) or the full name (Utah)
 * `postalCode` must be in the correct format

@@ -31,7 +31,7 @@ Next, add the `<rw-main>` tag where you want the plugin imbedded on the page
 </body>
 ```
 
-Initializing the plugin takes 2 steps. First, call `window.RepairWise({})` with the callback functions and initialization variables you want. This will return a builder object that you can call `start({})` on. Depending on what you pass to `start`, RepairWise will start in different modes. In this sample project, we included a file `utils.js` that contains sample values for initial variables and callbacks.
+Initializing the plugin takes 2 steps. First, call `window.RepairWise({})` with the callback functions and initialization variables you want. This will return a builder object that you can call `start({})` on. Depending on what you pass to `start`, EstimateON will start in different modes. In this sample project, we included a file `utils.js` that contains sample values for initial variables and callbacks.
 
 ```html
 </body>
